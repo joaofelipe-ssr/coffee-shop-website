@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-color: #d3ad7f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,       /* Topo: Totalmente preto para fundir com a navbar */
+        rgba(0, 0, 0, 0.4) 20%,    
+        transparent 15%,           
+        rgba(0, 0, 0, 0.6) 80%,    /* Começa a escurecer os grãos de café */
+        rgba(0, 0, 0, 1) 100%      /* Final: 100% PRETO PURO para emendar com a próxima seção */
+    ), url("../images/home.jpg");
+    
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 40px;
+    width: 420px;
+    background-color: transparent;
+    color: #fff;
+    padding: 30px 40px;
+}
+
+.container a.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.container form h1 {
+    font-size: 36px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.container form h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0px; /* Força o h3 a não empurrar nada para baixo */
+}
+
+.container form .icons {
+    display: flex;
+    justify-content: center; /* Centraliza o bloco todo no meio da tela */
+    align-items: center;     /* Alinha a linha, o grão e a outra linha na mesma altura (eixo vertical) */
+    gap: 10px;               /* Deixa um espacinho de 10px entre as linhas e o grão */
+    margin-top: -25px;       /* Puxa todo o conjunto para perto da frase de cima */
+    margin-bottom: 20px;     /* Afasta um pouco do texto "Faça Login para continuar" */
+}
+
+.container form h4 {
+    margin-top: -35px;       /* Puxa todo o conjunto para perto da frase de cima */
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
