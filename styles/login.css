@@ -20,9 +20,9 @@ body {
         to bottom,
         rgba(0, 0, 0, 1) 0%,       /* Topo: Totalmente preto para fundir com a navbar */
         rgba(0, 0, 0, 0.4) 20%,    
-        transparent 15%,           
+        transparent 50%,           
         rgba(0, 0, 0, 0.6) 80%,    /* Começa a escurecer os grãos de café */
-        rgba(0, 0, 0, 1) 100%      /* Final: 100% PRETO PURO para emendar com a próxima seção */
+        rgba(0, 0, 0, 1) 100%      /* Final: 100% PRETO */
     ), url("../images/home.jpg");
     
     background-position: center;
@@ -30,13 +30,14 @@ body {
 }
 
 .container {
-    margin-top: 40px;
+    margin-top: 25px;
     width: 420px;
     background-color: transparent;
     color: #fff;
     padding: 30px 40px;
 }
 
+/*-------LOGO-------*/
 .container a.logo img {
     width: 180px;
     height: auto;
@@ -44,6 +45,7 @@ body {
     margin: 0 auto;
 }
 
+/*-------TÍTULOS-------*/
 .container form h1 {
     font-size: 36px;
     text-align: center;
@@ -66,8 +68,103 @@ body {
 }
 
 .container form h4 {
-    margin-top: -35px;       /* Puxa todo o conjunto para perto da frase de cima */
-    font-size: 14px;
-    font-weight: 300;
+    margin-top: -35px;       /* Puxa todo o conjunto para perto da frase de cima */   
+    font-size: 16px;         
+    font-weight: 400;        
+    color: #fff;          
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
     text-align: center;
+    margin-bottom: -10px;
 }
+
+/*-------CAMPOS-------*/
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: #1A1A1A;
+    border: 2px solid var(--main-color);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #8C8C8C;
+}
+
+/*-------CONFIRMAR SENHA/ESQUECEU A SENHA-------*/
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 10px;
+}
+
+.remember-forgot label input {
+    accent-color:  #1A1A1A;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/*-------LOGAR-------*/
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 20px;
+}
+
+.login:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*-------CRIAR CONTA-------*/
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+    
+
+
