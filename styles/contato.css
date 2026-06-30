@@ -106,34 +106,45 @@ section {
     color: var(--main-color);
 }
 
-/*================ BANNER ================*/
-
-.banner{
-    height: 60vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("../images/home.jpg");
-
-    background-size: cover;
+/*------BANNER------*/
+.banner-container {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,       /* Topo: Totalmente preto para fundir com a navbar */
+        rgba(0, 0, 0, 0.4) 20%,    
+        transparent 50%,           
+        rgba(0, 0, 0, 0.6) 80%,    /* Começa a escurecer os grãos de café */
+        rgba(0, 0, 0, 1) 100%      /* Final: 100% PRETO PURO para emendar com a próxima seção */
+    ), url("../images/home.jpg");
+    
     background-position: center;
+    background-size: cover;
+}
 
+.banner-container section {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
 
+.content {
+    max-width: 60rem;
     text-align: center;
 }
 
-.banner-content h1{
-    font-size: 60px;
-    color: #D3AD7F;
+.content h3 {
+    color: var(--main-color);
+    font-size: 6rem;
 }
 
-.banner-content p{
-    margin-top: 15px;
-    font-size: 20px;
-    color: #ddd;
+.content p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    line-height: 1.8;
+    padding: 1rem 0;
 }
 
 /*================ CONTATO ================*/
